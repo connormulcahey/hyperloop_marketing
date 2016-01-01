@@ -1,2 +1,66 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "welcome";
+@import "blog";
+
+.navbar {
+	background-color: #0c5e96;
+	margin: 0;
+	border: none;
+
+	a {
+		color: white;
+
+		&:hover, &:active {
+			color: #0c5e96;
+		}
+
+	}
+
+	li.active {
+
+		a {
+			background-color: #eeeeee;
+			color: #0c5e96;
+		}
+
+	}
+
+}
+
+
+a:hover, a:focus, a:active {
+	color: #fcb52b;
+}
+
+footer {
+	padding-top: 20px;
+	box-sizing: border-box;
+	background-color: #0c5e96;
+	height: 200px;
+
+	h3 {
+		color: white;
+		display: block;
+	}
+
+	a {
+		color: white;
+	}
+
+}
+
+.icon-bar {
+	background-color: white;
+}
+
+a.navbar-brand {
+	color: white;
+
+	&:hover, &:active {
+		color: white;
+	}
+
+}
