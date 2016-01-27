@@ -3,6 +3,6 @@ Rails.application.routes.draw do
 
   get '/blog', :to => 'blog#index', :as => "blog"
 
-  get '/texas', :to => redirect('/UCSB_Hyperloop_Texas.pdf')
+  get '/dw', :to => redirect('/ucsbhyperloop_designweekendpresentation.pdf')
 
 end
