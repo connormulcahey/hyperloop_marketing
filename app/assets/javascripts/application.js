@@ -13,5 +13,16 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require owl.carousel
 //= require_tree .
 //= require bootstrap-sprockets
+
+$( document ).ready(function() {
+    $(".owl-carousel").owlCarousel({
+	    navigation: true,
+	    paginationSpeed : 1000,
+	    goToFirstSpeed : 2000,
+	    singleItem : true,
+	    autoHeight : true
+  	});
+});

@@ -10,7 +10,7 @@
 	background: image-url("hyperloop.jpg") no-repeat;
 	background-size: 100%;
 	width: 100%;
-	
+
 	span {
 		font-size: 0.7em;
 		color: #ccc;
@@ -60,16 +60,28 @@
 		margin: 30px 0 30px 0; 
 }
 
-#team-pic-bg {
+.owl-carousel {
+	
+}
+
+.slide {
+	
 	background-color: #0c5e96;
 	text-align: center;
 	width: 100%;
+
+	img {
+		width: 800px;
+		max-width: 100%;
+		border: none;
+	}
+
 }
 
-#team-pic {
-	border: none;
-	max-width: 100%;
-	width: 800px;
+.owl-carousel {
+	img {
+		max-width: 80%;
+	}
 }
 
 .team {
