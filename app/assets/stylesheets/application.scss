@@ -5,6 +5,10 @@
 @import "welcome";
 @import "blog";
 
+body {
+	background-color: #fffcff;
+}
+
 .navbar {
 	background-color: #0c5e96;
 	margin: 0;
@@ -37,6 +41,10 @@ a:hover, a:focus, a:active {
 
 .col-md-6 img {
 	max-width: 70%;
+}
+
+.col-md-12 img {
+	max-width: 100%;
 }
 
 footer {
