@@ -10,10 +10,13 @@
 	background: image-url("hyperloop.jpg") no-repeat;
 	background-size: 100%;
 	width: 100%;
-}
+	
+	span {
+		font-size: 0.7em;
+		color: #ccc;
+		margin: 2px;
+	}
 
-.row {
-  max-width: 1000px !important;
 }
 
 #hero-content {
