@@ -1,4 +1,6 @@
-.row {
-	max-width: 500px !important;
-	margin: 0 auto;
+#blog-container {
+	.row {
+		max-width: 600px !important;
+		margin: 0 auto;
+	}
 }
