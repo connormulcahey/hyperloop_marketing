@@ -18,11 +18,22 @@
 //= require bootstrap-sprockets
 
 $( document ).ready(function() {
-    $(".owl-carousel").owlCarousel({
-	    navigation: true,
-	    paginationSpeed : 1000,
-	    goToFirstSpeed : 2000,
-	    singleItem : true,
-	    autoHeight : true
-  	});
+  $(".owl-carousel").owlCarousel({
+    navigation: true,
+    paginationSpeed : 1000,
+    goToFirstSpeed : 2000,
+    singleItem : true,
+    autoHeight : true
+	});
+});
+
+$(function(){
+  var $ppc = $('.progress-pie-chart'),
+    percent = parseFloat($ppc.data('percent')),
+    deg = 360*percent/100;
+  if (percent > 50) {
+    $ppc.addClass('gt-50');
+  }
+  $('.ppc-progress-fill').css('transform','rotate('+ deg +'deg)');
+  $('.ppc-percents span').html(percent+'%');
 });
