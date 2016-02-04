@@ -37,3 +37,8 @@ $(function(){
   $('.ppc-progress-fill').css('transform','rotate('+ deg +'deg)');
   $('.ppc-percents span').html(percent+'%');
 });
+
+function myFunction() {
+  var content = marked($("#text-area").val());
+  $("#preview").html(content);
+}

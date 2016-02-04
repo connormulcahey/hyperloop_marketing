@@ -1,0 +1,60 @@
+#posts-container {
+
+	.row {
+		max-width: 600px !important;
+		margin: 0 auto;
+	}
+
+	img {
+		width: 90%;
+		display: block;
+		margin: 10px auto;
+	}
+
+	#cms-container {
+		width: 500px;
+		max-width: 90%;
+		margin: 0 auto;
+		margin-top: 30px;
+
+		textarea {
+			width: 100%;
+		}
+
+		input {
+			width: 100%;
+			border-radius: 3px;
+			border: none;
+			padding: 5px 10px;
+		}
+	
+		input[type="text"], input[type="password"] {
+			border: 1px solid #ccc;
+		}
+
+		input[type="submit"] {
+			background-color: #0c5e96;
+			color: white;
+			font-size: 1.8em;
+			padding: 10px 20px;
+
+			&:active {
+				background-color: gray;
+			}
+
+		}
+
+		label {
+			margin-top: 15px;
+		}
+
+	}
+
+	#preview {
+		background-color: white;
+		border-radius: 3px;
+		padding: 10px;
+		border: 1px solid #ccc;
+	}
+
+}

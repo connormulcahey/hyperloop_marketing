@@ -8,7 +8,7 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "welcome";
-@import "blog";
+@import "posts";
 
 body {
 	background-color: #fffcff;
@@ -44,8 +44,8 @@ a:hover, a:focus, a:active {
 	color: #fcb52b;
 }
 
-.col-md-6 img {
-	max-width: 70%;
+.col-md-6 img, .col-md-4 img {
+	max-width: 80%;
 }
 
 .col-md-12 img {

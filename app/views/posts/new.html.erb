@@ -1,0 +1,37 @@
+<div id="cms-container">
+	
+	<%= form_for @post do |f| %>
+
+		<h2>NEW POST</h2>
+
+		<% if !@passcode_correct %>
+			<h4 style="color:red;">PASSCODE INCORRECT!!!</h4>
+		<% end %>
+
+		<%= f.label :title %>
+		<br>
+	  <%= f.text_field :title, :placeholder => "Title", :id => "title-field" %>
+	  <br>
+	  <%= f.label 'Content' %> <br>
+	  <p>Use <a href="https://daringfireball.net/projects/markdown/">Markdown</a> for formatting.</p>
+	  <p>Upload images to IMGUR (just for simplicity's sake) then use the URL in markdown format: ![Alt text](/path/to/img.jpg). They'll be centered and with the text in above-below style.</p>
+	  <p>Please don't use any headings large than h3.</p>
+	  <%= f.text_area :text, :id => 'text-area', :rows => 20, :onkeyup => "myFunction()" %>
+	  <br>
+	  <h3>PREVIEW</h3>
+	  <div id="preview">
+
+	  </div>
+	  <br>
+	  <%= f.label 'Passcode' %>
+	  <br>
+	  <input type="password" name="password">
+	  <br>
+	  <br>
+	  <br>
+	  <%= f.submit("SUBMIT", :id => "register-submit") %>
+	  <br>
+	  <br>
+	<% end %>
+
+</div>
