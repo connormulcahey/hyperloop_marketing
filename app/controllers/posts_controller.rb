@@ -9,7 +9,7 @@ class PostsController < ApplicationController
 	end
 
 	def new
-		@passcode_correct = false
+		@passcode_correct = true
 		@post = Post.new
 	end
 
