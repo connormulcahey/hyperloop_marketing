@@ -21,7 +21,7 @@ class PostsController < ApplicationController
 		if @passcode_correct && params[:post][:text] && params[:post][:title]
 			@post.text = markdown.render(params[:post][:text])
 			@post.save!
-			redirect_to 'blog'
+			redirect_to '/blog'
 		else 
 			render 'new'
 		end

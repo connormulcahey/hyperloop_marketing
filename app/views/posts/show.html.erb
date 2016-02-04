@@ -1,7 +1,7 @@
-<div style="width: 90%; max-width: 500px;">
+<div style="width: 90%; max-width: 550px; margin: 20px auto">
 	<h3><%= @post.title %></h3>
-	<p><em><%= p.created_at.strftime('%m/%d/%Y') %></em></p>
+	<p><em><%= @post.created_at.strftime('%m/%d/%Y') %></em></p>
 	<article>
-		<%= p.text.html_safe %>
+		<%= @post.text.html_safe %>
 	</article>
 </div>

@@ -16,7 +16,7 @@
         <li><a href="/#sponsors">Sponsors</a></li>
         <li><a href="/#team-title">Team</a></li>
         <li><a href="/#footer">Contact</a></li>
-        <li <%= "class=active" if request.fullpath == blog_path %>><a href="/blog">Blog</a></li>
+        <li <%= "class=active" if controller_name == 'posts' %>><a href="/blog">Blog</a></li>
 
       </ul>
     </div>
