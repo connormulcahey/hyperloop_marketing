@@ -29,6 +29,8 @@ ready = function() {
 
   var $ppc = $('.progress-pie-chart'),
   percent = parseFloat($ppc.data('percent')),
+  s_percent = parseFloat($ppc.data('start')),
+  start = 360*s_percent/100,
   deg = 360*percent/100;
   if (percent > 50) {
     $ppc.addClass('gt-50');
