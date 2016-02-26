@@ -1,7 +1,7 @@
 #posts-container {
 
 	.row {
-		max-width: 600px !important;
+		max-width: 630px !important;
 		margin: 0 auto;
 	}
 
@@ -9,6 +9,10 @@
 		width: 90%;
 		display: block;
 		margin: 10px auto;
+	}
+
+	p {
+		font-size: 1.2em;
 	}
 
 	#cms-container {
