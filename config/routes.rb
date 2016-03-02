@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
   get '/dw', :to => redirect('/ucsbhyperloop_designweekend.pdf')
 
+  get '/sw', :to => redirect('/assets/software_design.svg')
+
   resources "posts"
 
 end
