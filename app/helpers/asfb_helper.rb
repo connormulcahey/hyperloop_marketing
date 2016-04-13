@@ -1,0 +1,2 @@
+module AsfbHelper
+end

@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get '/sw', :to => redirect('/software.pdf')
 
+  get '/asfb', :to => 'asfb#index'
+
   resources "posts"
 
 end
